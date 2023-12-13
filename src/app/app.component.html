@@ -1,7 +1,7 @@
 <div>
-  <h1>Contador de clicks</h1>
-  <p>{{contador}}</p>
-  <!-- Uso del evento (click) para aumentar/decrementar un contador -->
-  <button (click)="incrementar()">Incrementar 1</button>
-  <button (click)="decrementar()">Decrementar 1</button>
+  <button (click)="fijarNombre1()">Alejandro</button>
+  <button (click)="fijarNombre2()">Laura</button>
 </div>
+<p>Nombre en un input:</p>
+<input type="text" [value]="nombre" />
+<p>Nombre en un párrafo: {{nombre}}</p>

@@ -12,15 +12,15 @@ import { RouterOutlet } from '@angular/router';
 
 export class AppComponent {
   //Propiedades
-  title='proyecto001'
-  contador=0
+  title = 'proyecto001'
+  nombre = ''
 
-  incrementar(){
-    this.contador++
+  fijarNombre1() {
+    this.nombre = 'Alejandro'
   }
 
-  decrementar(){
-    this.contador--
+  fijarNombre2() {
+    this.nombre = 'Laura'
   }
- 
+
 }
