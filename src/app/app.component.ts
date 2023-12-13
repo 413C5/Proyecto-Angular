@@ -13,28 +13,27 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   //Propiedades
   nombre = 'Alejandro Zarate'
-  edad = 40
-  email = 'zarate@gmail.com'
-  sueldos = [1700, 1600, 1900]
-  activo = true
-  sitio='https://www.google.com'
+  edad = 23
+  articulos = [
+    {
+      codigo: 1,
+      descripcion: 'naranjas',
+      precio: 540
+    },
+    {
+      codigo: 2,
+      descripcion: 'manzanas',
+      precio: 900
+    },
+    {
+      codigo: 3,
+      descripcion: 'peras',
+      precio: 490
+    }
+  ]
 
-  //Define si un empleado es activo o no
-  esActivo() {
-    if (this.activo)
-      return 'Trabajador activo'
-    else
-      return 'Trabajador inactivo'
+  //Devuelve un valor aleatorio 
+  generarNumero(){
+    return Math.floor(Math.random()*3)+1
   }
-
-  //Devuleve la suma de los 3 ultimos sueldos
-  ultimos3Sueldos() {
-    let suma = 0
-    this.sueldos.forEach(i => {
-      suma += i;
-    })
-    return suma
-  }
-
-  title = 'proyecto001'
 }
