@@ -1,38 +1,7 @@
 <div>
-  <h1>Empleado</h1>
-  <p>Nombre del empleado: {{nombre}}</p>
-  <p>Edad: {{edad}}</p>
-  @if (edad>=18) {
-    <p>Es mayor de edad el empleado</p>
-  }
-  @else {
-    <p>Es menor de edad el empleado</p>
-  }
-   <!-- Se usa el recorrimiento @for para recorrer el arreglo de datos -->
-  <h1>Listado de articulos</h1>
-  <table>
-    <th>Codigo</th>
-    <th>Descripción</th>
-    <th>Precio</th>
-    @for (articulo of articulos; track articulo.codigo) {
-      <tr>
-        <td>{{articulo.codigo}}</td>
-        <td>{{articulo.descripcion}}</td>
-        <td>{{articulo.precio}}</td>
-      </tr>
-    }
-  </table>
-  <!-- Se muestra un numero aleatorio -->
-  <h1>Numero aleatorio entre 1 y 3</h1>
-  @switch (generarNumero()) {
-    @case(1){
-      <p>Uno</p>
-    }
-    @case(2){
-      <p>Dos</p>
-    }
-    @case(3){
-      <p>Tres</p>
-    }
-  }
+  <h1>Contador de clicks</h1>
+  <p>{{contador}}</p>
+  <!-- Uso del evento (click) para aumentar/decrementar un contador -->
+  <button (click)="incrementar()">Incrementar 1</button>
+  <button (click)="decrementar()">Decrementar 1</button>
 </div>
