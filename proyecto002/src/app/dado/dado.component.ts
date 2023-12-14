@@ -11,5 +11,4 @@ import { Component } from '@angular/core';
 
 export class DadoComponent {
   valor: number = Math.floor(Math.random() * 6) + 1
-asdada
 }
