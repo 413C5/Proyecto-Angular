@@ -1,3 +1,9 @@
-<div>
-  <app-dado></app-dado>
+<div style="text-align: center">
+  <Dado [valor]="valor1"></Dado>
+  <Dado [valor]="valor2"></Dado>
+  <Dado [valor]="valor3"></Dado>
+  <hr />
+  <button (click)="tirar()">tirar</button>
+  <hr />
+  <p>Resultado: {{ resultado }}</p>
 </div>

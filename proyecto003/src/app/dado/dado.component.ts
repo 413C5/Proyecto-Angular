@@ -1,7 +1,7 @@
-import { Component,Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-dado',
+  selector: 'Dado',
   standalone: true,
   imports: [],
   templateUrl: './dado.component.html',
@@ -9,5 +9,5 @@ import { Component,Input } from '@angular/core';
 })
 
 export class DadoComponent {
-  @Input() valor:string=''
+  @Input() valor: number = 1
 }
